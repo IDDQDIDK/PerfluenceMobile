@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Perfluence.Pages.MyPosts">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#6DB850">
+            <Label Text="Просмотреть свои объявления можно здесь:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+            <Button x:Name="Refresh" Text="Обновить" Background="#6DA860" TextColor="White" Pressed="Refresh_Pressed"></Button>
+            <Picker x:Name="Project" Background="#6DA860" TextColor="White"></Picker>
+            <Entry x:Name="Link" Placeholder="Ссылка" TextColor="White" PlaceholderColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+            <Button x:Name="Add" Text="Добавить" Background="#6DA860" TextColor="White" Pressed="Add_Pressed"></Button>
+            <Entry x:Name="Search" Placeholder="Поиск" TextColor="White" PlaceholderColor="White" TextChanged="Search_TextChanged" FontFamily="Comic Sans MS" FontSize="25"/>
+            <ScrollView>
+                <StackLayout x:Name="Posts">
+                    
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

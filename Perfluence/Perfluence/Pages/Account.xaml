@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Perfluence.Pages.Account">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#6DB850">
+            <Label Text="Личный кабинет"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+            <Frame BackgroundColor="Green">
+                <StackLayout>
+                    <Frame BackgroundColor="#6DB850">
+                        <StackLayout Orientation="Horizontal">
+                            <Image x:Name="Img" WidthRequest="150" HeightRequest="150" ></Image>
+                            <StackLayout>
+                                <Label x:Name="BlogShow" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                                <Label x:Name="RequisitsShow" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            </StackLayout>
+                            <Image x:Name="ph" IsVisible="False" HeightRequest="0" Source="icon.png"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <ScrollView BackgroundColor="#6DB850">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" >
+                                <Label WidthRequest="160"  VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Actor" FontSize="25">Фамилия:</Label>
+                            </StackLayout>
+                                <Entry x:Name="FirstName" Placeholder="Фамилию" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Имя:</Label>
+                            </StackLayout>
+                                <Entry x:Name="SecondName" Placeholder="Имя" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Отчество:</Label>
+                            </StackLayout>
+                                <Entry x:Name="Patronymic" Placeholder="Отчество" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Дата рождения:</Label>
+                            </StackLayout>
+                                <DatePicker x:Name="BirthDate" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Блог:</Label>
+                            </StackLayout>
+                                <Entry x:Name="Blog" Placeholder="Блог" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Реквизиты:</Label>
+                            </StackLayout>
+                                <Entry x:Name="Requisits" Placeholder="Реквизиты" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Padding="0,0,30,0" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Email:</Label>
+                            </StackLayout>
+                                <Entry x:Name="Email" Placeholder="Email" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Логин:</Label>
+                            </StackLayout>
+                                <Entry x:Name="Login" Placeholder="Логин" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="25">Пароль:</Label>
+                            </StackLayout>
+                                <Entry x:Name="Passcode" Placeholder="Пароль" PlaceholderColor="White" TextColor="White" FontFamily="Comic Sans MS" FontSize="25" IsPassword="True"/>
+                            <Button Text="Сменить данные" TextColor="White" BackgroundColor="#6DA860" FontFamily="Comic Sans MS" FontSize="25" Pressed="Button_Pressed"/>
+
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

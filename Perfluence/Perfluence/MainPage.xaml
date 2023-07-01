@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Perfluence.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#6DB850" Padding="24" CornerRadius="0" >
+            <StackLayout>
+                <Label Text="Добро пожаловать в Perfluence!" HorizontalTextAlignment="Center" TextColor="White" FontFamily="Comic Sans MS" FontSize="20"/>
+                <Image WidthRequest="150" Source="icon.png"></Image>
+            </StackLayout>
+        </Frame>
+        <ScrollView>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Entry x:Name="Login" Placeholder="Логин" PlaceholderColor="Green" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"></Entry>
+                <Entry x:Name="Passcode" Placeholder="Пароль" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25" IsPassword="True"></Entry>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontFamily="Comic Sans MS" FontSize="25" TextColor="Green">Показать пароль:</Label>
+                    <CheckBox x:Name="ShowPassword" CheckedChanged="ShowPassword_CheckedChanged"></CheckBox>
+                </StackLayout>
+                <Button x:Name="Enter" Text="Войти" Background="#6DB850" TextColor="White" FontFamily="Comic Sans MS" FontSize="25" Pressed="Enter_Pressed"></Button>
+                <Label Text="Ещё не с нами?" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                <Button x:Name="Registr" Text="Зарегистрироваться" Background="#6DB850" TextColor="White" FontFamily="Comic Sans MS" FontSize="25" Pressed="Registr_Pressed"></Button>
+            </StackLayout>
+
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

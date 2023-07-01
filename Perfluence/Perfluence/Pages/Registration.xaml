@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Perfluence.Pages.Registration">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Введите свои:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" >
+                        <Label  WidthRequest="160"  VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Actor" FontSize="25">Фамилию:</Label>
+                    </StackLayout>
+                        <Entry x:Name="FirstName" Placeholder="Фамилию" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Имя:</Label>
+                    </StackLayout>
+                        <Entry x:Name="SecondName" Placeholder="Имя" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Отчество:</Label>
+                    </StackLayout>
+                        <Entry x:Name="Patronymic" Placeholder="Отчество" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Дату рождения:</Label>
+                    </StackLayout>
+                        <DatePicker x:Name="BirthDate" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Блог:</Label>
+                    </StackLayout>
+                        <Entry x:Name="Blog" Placeholder="Блог" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Реквизиты:</Label>
+                    </StackLayout>
+                        <Entry x:Name="Requisits" Placeholder="Реквизиты" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Padding="0,0,30,0" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Email:</Label>
+                    </StackLayout>
+                        <Entry x:Name="Email" Placeholder="Email" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Логин:</Label>
+                    </StackLayout>
+                        <Entry x:Name="Login" Placeholder="Логин" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25">Пароль:</Label>
+                    </StackLayout>
+                        <Entry x:Name="Passcode" Placeholder="Пароль" PlaceholderColor="DarkGreen" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25" IsPassword="True"/>
+                    <Button Text="Зарегистрироваться!" TextColor="Green" FontFamily="Comic Sans MS" FontSize="25" Pressed="Button_Pressed"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
